@@ -1,0 +1,532 @@
+<div class="sidebar app-aside hidden-print ng-scope" id="sidebar" toggleable="" parent-active-class="app-slide-off">
+    <div ng-scrollbars="" class="ng-isolate-scope mCustomScrollbar _mCS_1 mCS_no_scrollbar">
+        <div id="mCSB_1" class="mCustomScrollBox mCS-dark-3 mCSB_vertical mCSB_inside" tabindex="0">
+            <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                style="position:relative; top:0; left:0;" dir="ltr">
+                <!-- ngInclude:  'assets/views/app/sidebar.html'  -->
+                <div data-ng-include=" &#39;assets/views/app/sidebar.html&#39; " class="ng-scope" style="">
+                    <!-- start: SIDEBAR -->
+                    <!-- ngIf: !adminState --><!-- ngInclude:  'assets/views/app/nav.html'  -->
+                    <nav ng-model="adminState" ng-if="!adminState"
+                        data-ng-include=" &#39;assets/views/app/nav.html&#39; "
+                        class="ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" style="">
+                        <!-- start: SEARCH FORM -->
+                        <div class="sidebar-spacer ng-scope">
+                        </div>
+                        <!-- end: SEARCH FORM -->
+                        <!-- start: MAIN NAVIGATION MENU -->
+                        <ul class="main-navigation-menu ng-scope">
+                            <li ui-sref-active="active">
+                                <a ui-sref="app.dashboard.main" href="http://kinetix.aasricontrols.com/#!/dashboard">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-bar-chart"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Dashboard </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li ui-sref-active="active">
+
+                            </li>
+                            <li ng-class="{&#39;active open&#39;:$state.includes(&#39;app.polproc&#39;)}"
+                                class="active open">
+                                <a href="javascript:void(0)">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-panel"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Policy and Procedure Management </span><i
+                                                class="icon-arrow"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="sub-menu" style="display: block;">
+                                    <li ui-sref-active="active"
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.polproc.policydocs&#39;) }"
+                                        class="">
+                                        <a ui-sref="app.polproc.policydocs.main"
+                                            href="http://kinetix.aasricontrols.com/#!/polproc/policydocs">
+                                            <span class="title"> Policy and Procedure Management </span>
+                                        </a>
+                                    </li>
+                                    <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.polproc.policy&#39;) }"
+                                        class="">
+                                        <a ui-sref="app.polproc.policy.main"
+                                            href="http://kinetix.aasricontrols.com/#!/polproc/policy">
+                                            <span class="title"> Policy Documents </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li ng-class="{&#39;active open&#39;:$state.includes(&#39;app.datainventory&#39;)}">
+                                <a href="javascript:void(0)">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-harddrives"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Data Governance </span><i class="icon-arrow"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li ui-sref-active="active"
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.datainventory.asset&#39;) }"
+                                        class="">
+                                        <a ui-sref="app.datainventory.asset.main"
+                                            href="http://kinetix.aasricontrols.com/#!/datainventory/asset">
+                                            <span class="title"> Assets </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.datainventory.datamodels&#39;) }">
+                                        <a ui-sref="app.datainventory.datamodels.main"
+                                            href="http://kinetix.aasricontrols.com/#!/datainventory/datamodels">
+                                            <span class="title"> Data Models </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.datainventory.datamapping&#39;) }">
+                                        <a ui-sref="app.datainventory.datamapping.main"
+                                            href="http://kinetix.aasricontrols.com/#!/datainventory/datamapping">
+                                            <span class="title"> Data Lineage </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.datainventory.steward&#39;) }">
+                                        <a ui-sref="app.datainventory.steward.main"
+                                            href="http://kinetix.aasricontrols.com/#!/datainventory/steward">
+                                            <span class="title"> Data Steward DQ </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.datainventory.metadata&#39;) }">
+                                        <a ui-sref="app.datainventory.metadata.main"
+                                            href="http://kinetix.aasricontrols.com/#!/datainventory/metadata">
+                                            <span class="title"> Metadata </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.datainventory.clouddatamanagement&#39;) }">
+                                        <a ui-sref="app.datainventory.clouddatamanagement.main"
+                                            href="http://kinetix.aasricontrols.com/#!/datainventory/clouddatamanagement">
+                                            <span class="title"> Cloud Data Management </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.datainventory.esgdata&#39;) }">
+                                        <a ui-sref="app.datainventory.esgdata.main"
+                                            href="http://kinetix.aasricontrols.com/#!/datainventory/esgdata">
+                                            <span class="title"> ESGData </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li ng-class="{&#39;active open&#39;:$state.includes(&#39;app.admin.gdprpre&#39;)}">
+                                <a href="javascript:void(0)">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-harddrives"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> GDPR </span><i class="icon-arrow"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.compliance.gdprpre&#39;) }">
+                                        <a ui-sref="app.compliance.gdprpre.main"
+                                            href="http://kinetix.aasricontrols.com/#!/compliance/gdprpre">
+                                            <span class="title">GDPR Pre Assessment </span>
+                                        </a>
+                                    </li>
+                                    <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.compliance.gdpr&#39;) }">
+                                        <a ui-sref="app.compliance.gdpr.main"
+                                            href="http://kinetix.aasricontrols.com/#!/compliance/gdpr">
+                                            <span class="title"> GDPR Assessment </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li ui-sref-active="active">
+                                <a ui-sref="app.audit.main" href="http://kinetix.aasricontrols.com/#!/audit">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-zoom-in"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Audit </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li ui-sref-active="active">
+                                <a ui-sref="app.bpm.main" href="http://kinetix.aasricontrols.com/#!/bpm">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-flag-alt"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Business Process </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <a href="javascript:void(0)">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-harddrives"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title"> Risk </span><i class="icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+
+                                <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.risk.profile&#39;) }">
+                                    <a ui-sref="app.risk.profile.main"
+                                        href="http://kinetix.aasricontrols.com/#!/risk/profile">
+                                        <span class="title"> Risk Data </span>
+                                    </a>
+                                </li>
+                                <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.risk.assessment&#39;) }">
+                                    <a ui-sref="app.risk.assessment.main"
+                                        href="http://kinetix.aasricontrols.com/#!/risk/assessment">
+                                        <span class="title"> Risk Control Self Assessment </span>
+                                    </a>
+                                </li>
+
+                                <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.risk.matrix&#39;) }">
+                                    <a ui-sref="app.risk.matrix.main"
+                                        href="http://kinetix.aasricontrols.com/#!/risk/matrix">
+                                        <span class="title"> Risk Control Profile </span>
+                                    </a>
+                                </li>
+
+                                <li
+                                    ng-class="{&#39;active&#39;: $state.includes(&#39;app.risk.controlMatrices.main&#39;) }">
+                                    <a ui-sref="app.risk.controlMatrices.main"
+                                        href="http://kinetix.aasricontrols.com/#!/risk/controlmatrices">
+                                        <span class="title"> Risk Control Matrices </span>
+                                    </a>
+                                </li>
+
+                                <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.risk.rcm&#39;) }">
+                                    <a ui-sref="app.risk.rcm.main" href="http://kinetix.aasricontrols.com/#!/risk/rcm">
+                                        <span class="title"> Risk Control Dashboards </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <a href="javascript:void(0)">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-harddrives"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title"> Controls </span><i class="icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+                                <li ui-sref-active="active"
+                                    ng-class="{&#39;active&#39;: $state.includes(&#39;app.control.repo&#39;) }">
+                                    <a ui-sref="app.control.repo.main"
+                                        href="http://kinetix.aasricontrols.com/#!/control/repo">
+                                        <span class="title"> Control Repository </span>
+                                    </a>
+                                </li>
+                                <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.controltestdata&#39;) }">
+                                    <a ui-sref="app.controltestdata.main"
+                                        href="http://kinetix.aasricontrols.com/#!/controltestdata">
+                                        <span class="title"> Control Test Data </span>
+                                    </a>
+                                </li>
+                                <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.control.testplan&#39;) }">
+                                    <a ui-sref="app.control.testplan.main"
+                                        href="http://kinetix.aasricontrols.com/#!/control/testplan">
+                                        <span class="title"> Control Test Plan </span>
+                                    </a>
+                                </li>
+                                <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.control.testresult&#39;) }">
+                                    <a ui-sref="app.control.testresult.main"
+                                        href="http://kinetix.aasricontrols.com/#!/control/testresult">
+                                        <span class="title"> Control Test Result </span>
+                                    </a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a ui-sref="app.mitigate.remediations"
+                                        href="http://kinetix.aasricontrols.com/#!/mitigate/remediations">
+                                        <span class="title"> Remediations </span>
+                                    </a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a ui-sref="app.mitigate.findings"
+                                        href="http://kinetix.aasricontrols.com/#!/mitigate/findings">
+                                        <span class="title"> Actions Findings </span>
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                            <li ng-class="{&#39;active open&#39;:$state.includes(&#39;app.itrisk&#39;)}">
+                                <a href="javascript:void(0)">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-harddrives"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> IT Risk </span><i class="icon-arrow"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.itrisk.incident&#39;) }">
+                                        <a ui-sref="app.itrisk.incident.main"
+                                            href="http://kinetix.aasricontrols.com/#!/itrisk/incident">
+                                            <span class="title"> IT Risk Incident </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.itrisk.assessment&#39;) }">
+                                        <a ui-sref="app.itrisk.assessment.main"
+                                            href="http://kinetix.aasricontrols.com/#!/itrisk/assessment">
+                                            <span class="title"> IT Risk Assessment </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li ng-class="{&#39;active open&#39;:$state.includes(&#39;app.oprisk&#39;)}">
+                                <a href="javascript:void(0)">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-harddrives"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Loss Data Event Management </span><i
+                                                class="icon-arrow"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li ng-class="{&#39;active&#39;: $state.includes(&#39;app.oprisk.incident&#39;) }">
+                                        <a ui-sref="app.oprisk.incident.main"
+                                            href="http://kinetix.aasricontrols.com/#!/oprisk/incident">
+                                            <span class="title"> Loss Data Event </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active&#39;: $state.includes(&#39;app.oprisk.assessment&#39;) }">
+                                        <a ui-sref="app.oprisk.assessment.main"
+                                            href="http://kinetix.aasricontrols.com/#!/oprisk/assessment">
+                                            <span class="title"> Loss Data Event Assessment </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li ng-class="{&#39;active open&#39;:$state.includes(&#39;app.compliance&#39;)}">
+                                <a href="javascript:void(0)">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-check-box"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Compliance </span><i class="icon-arrow"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li
+                                        ng-class="{&#39;active open&#39;:$state.includes(&#39;app.compliance.sox&#39;) }">
+                                        <a href="javascript:void(0)">
+                                            <div class="item-content">
+                                                <div class="item-inner-submenu">
+                                                    <span class="title"> SOX </span><i class="icon-arrow"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li ui-sref-active="active"
+                                                ng-class="{&#39;active&#39;: $state.includes(&#39;app.compliance.soxtp&#39;) }">
+                                                <a ui-sref="app.compliance.soxtp.main"
+                                                    href="http://kinetix.aasricontrols.com/#!/compliance/soxtp">
+                                                    <span class="title"> SOX Test Plan </span>
+                                                </a>
+                                            </li>
+                                            <li
+                                                ng-class="{&#39;active&#39;: $state.includes(&#39;app.compliance.soxrcm&#39;) }">
+                                                <a ui-sref="app.compliance.soxrcm.main"
+                                                    href="http://kinetix.aasricontrols.com/#!/compliance/soxrcm">
+                                                    <span class="title"> SOX Risk Control Matrix</span>
+                                                </a>
+                                            </li>
+                                            <li
+                                                ng-class="{&#39;active&#39;: $state.includes(&#39;app.compliance.soxpra&#39;) }">
+                                                <a ui-sref="app.compliance.soxpra.main"
+                                                    href="http://kinetix.aasricontrols.com/#!/compliance/soxpra">
+                                                    <span class="title"> SOX Process Risk Analysis</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active open&#39;:$state.includes(&#39;app.compliance.pcidss&#39;) }">
+                                        <a href="javascript:void(0)">
+                                            <div class="item-content">
+                                                <div class="item-inner-submenu">
+                                                    <span class="title"> PCIDSS </span><i class="icon-arrow"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li ui-sref-active="active"
+                                                ng-class="{&#39;active&#39;: $state.includes(&#39;app.compliance.pcidss&#39;) }">
+                                                <a ui-sref="app.compliance.pcidss.main"
+                                                    href="http://kinetix.aasricontrols.com/#!/compliance/pcidss">
+                                                    <span class="title"> PCIDSS </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active open&#39;:$state.includes(&#39;app.compliance.amlkyc&#39;) }">
+                                        <a href="javascript:void(0)">
+                                            <div class="item-content">
+                                                <div class="item-inner-submenu">
+                                                    <span class="title"> AML/KYC </span><i class="icon-arrow"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li ui-sref-active="active"
+                                                ng-class="{&#39;active&#39;: $state.includes(&#39;app.compliance.amlkyctp&#39;) }">
+                                                <a ui-sref="app.compliance.amlkyctp.main"
+                                                    href="http://kinetix.aasricontrols.com/#!/compliance/amlkyctp">
+                                                    <span class="title"> AML/KYC Assessment </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li
+                                        ng-class="{&#39;active open&#39;:$state.includes(&#39;app.compliance.soc&#39;) }">
+                                        <a href="javascript:void(0)">
+                                            <div class="item-content">
+                                                <div class="item-inner-submenu">
+                                                    <span class="title"> SOC </span><i class="icon-arrow"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li ui-sref-active="active"
+                                                ng-class="{&#39;active&#39;: $state.includes(&#39;app.compliance.soctp&#39;) }">
+                                                <a ui-sref="app.compliance.soctp.main"
+                                                    href="http://kinetix.aasricontrols.com/#!/compliance/soctp">
+                                                    <span class="title"> SOC Assessment </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li ng-class="{&#39;active open&#39;:$state.includes(&#39;app.mitigate&#39;)}">
+                                <a href="javascript:void(0)">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-export"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Mitigation </span><i class="icon-arrow"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li ui-sref-active="active">
+                                        <a ui-sref="app.mitigate.remediations"
+                                            href="http://kinetix.aasricontrols.com/#!/mitigate/remediations">
+                                            <span class="title"> Remediations </span>
+                                        </a>
+                                    </li>
+                                    <li ui-sref-active="active">
+                                        <a ui-sref="app.mitigate.findings"
+                                            href="http://kinetix.aasricontrols.com/#!/mitigate/findings">
+                                            <span class="title"> Actions Findings </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li ng-class="{&#39;active open&#39;:$state.includes(&#39;app.monitor&#39;)}">
+                                <a href="javascript:void(0)">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-desktop"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Monitoring </span><i class="icon-arrow"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li ui-sref-active="active">
+                                        <a ui-sref="app.monitor.continuous">
+                                            <span class="title"> Continuous </span>
+                                        </a>
+                                    </li>
+                                    <li ui-sref-active="active">
+                                        <a ui-sref="app.monitor.network">
+                                            <span class="title"> Network </span>
+                                        </a>
+                                    </li>
+                                    <li ui-sref-active="active">
+                                        <a ui-sref="app.monitor.firewall">
+                                            <span class="title"> Firewall </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li ui-sref-active="active">
+                                <a ui-sref="app.glossary" href="http://kinetix.aasricontrols.com/#!/glossary">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="ti-list"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <span class="title"> Glossary </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- end: MAIN NAVIGATION MENU -->
+                    </nav><!-- end ngIf: !adminState -->
+                    <!-- end: SIDEBAR -->
+                    <!-- start: ADMIN SIDEBAR -->
+                    <!-- ngIf: adminState -->
+                    <!-- end: ADMIN SIDEBAR -->
+                </div>
+            </div>
+            <div id="mCSB_1_scrollbar_vertical"
+                class="mCSB_scrollTools mCSB_1_scrollbar mCS-dark-3 mCSB_scrollTools_vertical" style="display: none;"><a
+                    href="http://kinetix.aasricontrols.com/#" class="mCSB_buttonUp" oncontextmenu="return false;"></a>
+                <div class="mCSB_draggerContainer">
+                    <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                        style="position: absolute; min-height: 30px; top: 0px; height: 0px;"
+                        oncontextmenu="return false;">
+                        <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                    </div>
+                    <div class="mCSB_draggerRail"></div>
+                </div><a href="http://kinetix.aasricontrols.com/#" class="mCSB_buttonDown"
+                    oncontextmenu="return false;"></a>
+            </div>
+        </div>
+    </div>
+</div>
